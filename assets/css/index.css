@@ -1,0 +1,164 @@
+.main-visual {
+  margin: 0 auto 80px;
+  max-width: 1200px;
+}
+.main-visual .slick-dots li button:before {
+  color: #3aabd2;
+}
+.main-visual .slick-dots li.slick-active button:before {
+  color: #3aabd2;
+  opacity: 0.75;
+}
+
+.top-section + .top-section {
+  margin-top: 80px;
+}
+.top-section__title-area {
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+.top-section__title-area::after {
+  background: #3aabd2;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 10px auto 0;
+  width: 80px;
+}
+.top-section__title-area .title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.top-section__title-area .sub {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.top-service {
+  background: #d6f2fb;
+  margin-top: 0;
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+.top-service__list li .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.top-service__list li .c-text {
+  margin-top: 10px;
+}
+
+.top-product__list li .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: center;
+}
+.top-product__list li .c-text {
+  margin-top: 8px;
+}
+
+.top-recruit__bnr {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.top-recruit__bnr__item a {
+  align-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: flex;
+  font-size: 2.8rem;
+  font-weight: bold;
+  height: 240px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.top-recruit__bnr__item a:hover:before {
+  background-size: 110% auto;
+}
+.top-recruit__bnr__item a:before {
+  background-image: url(../images/top/bnr_recruit01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+.top-recruit__bnr__item:nth-child(2) a:before {
+  background-image: url(../images/top/bnr_recruit02.jpg);
+}
+
+.top-portfolio .c-text {
+  margin-bottom: 50px;
+}
+.top-portfolio .portfolio-list li {
+  text-align: center;
+}
+.top-portfolio .portfolio-list li .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: center;
+}
+.top-portfolio .portfolio-list li .img {
+  margin-bottom: 20px;
+}
+.top-portfolio .portfolio-list li .img img {
+  height: 18vw;
+  max-height: 220px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .main-visual {
+    margin-bottom: 16vw;
+  }
+  .top-section + .top-section {
+    margin-top: 16vw;
+  }
+  .top-section__title-area {
+    margin-bottom: 5.3333333333vw;
+  }
+  .top-section__title-area::after {
+    height: 1.0666666667vw;
+    width: 16vw;
+  }
+  .top-section__title-area .title {
+    font-size: 2.4rem;
+  }
+  .top-section__title-area .sub {
+    margin-top: 2.6666666667vw;
+  }
+  .top-service {
+    padding-bottom: 16vw;
+    padding-top: 16vw;
+  }
+  .top-service__list li .img {
+    text-align: center;
+  }
+  .top-service__list li .img img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .top-recruit__bnr__item a {
+    font-size: 2.6rem;
+    height: 53.3333333333vw;
+  }
+  .top-portfolio .portfolio-list li .img img {
+    height: 53.3333333333vw;
+  }
+}
